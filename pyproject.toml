@@ -32,9 +32,10 @@ classifiers = [
     "Intended Audience :: Healthcare Industry",
     "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
     "Topic :: Software Development :: Libraries :: Python Modules",
-    "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10"
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 
 packages = [
@@ -96,7 +97,7 @@ gen-linkml = "linkml.generators.linkmlgen:cli"
 linkml-schema-fixer = "linkml.utils.schema_fixer:main"
 
 [tool.poetry.dependencies]
-python = "^3.8.1"
+python = "^3.9.0"
 antlr4-python3-runtime = "<4.10,==4.*,>=4.9.0"
 click = ">=7.0"
 graphviz = ">=0.10.1"
@@ -110,8 +111,8 @@ linkml-runtime = ">=1.6.0"
 openpyxl = "*"
 parse = "*"
 prefixcommons = ">=0.1.7"
-prefixmaps = ">=0.1.3"
-pydantic = ">=1.0.0,<3.0.0"
+prefixmaps = ">=0.2.0"
+pydantic = ">=2.5.0,<3.0.0"
 pyjsg = ">=0.11.6"
 pyshex = ">=0.7.20"
 pyshexc = ">=0.8.3"
@@ -121,7 +122,7 @@ rdflib = ">=6.0.0"
 requests = ">=2.22"
 sqlalchemy = ">=1.4.31"
 watchdog = ">=0.9.0"
-typing-extensions = {version = "^4.5.0", python = "3.7"}
+typing-extensions = {version = "^4.5.0", python = "3.9"}
 
 [tool.poetry.dev-dependencies]
 chardet = "*"
@@ -205,8 +206,8 @@ select = [
   "F",  # Pyflakes
   "I",  # isort
 ]
-# Assume Python 3.8
-target-version = "py38"
+# Assume Python 3.9
+target-version = "py39"
 
 [tool.ruff.per-file-ignores]
 # These templates can have long lines
