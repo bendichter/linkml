@@ -68,12 +68,6 @@ jobs:
         run: poetry install --no-interaction --no-root
 
       #----------------------------------------------
-      # install pydantic
-      #----------------------------------------------
-      - name: Install Pydantic
-        run: poetry add pydantic@^${{ matrix.pydantic-version }}
-
-      #----------------------------------------------
       #         setup and install graphviz
       #----------------------------------------------
       - name: Setup Graphviz
